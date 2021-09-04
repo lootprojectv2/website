@@ -15,7 +15,7 @@ export default function FAQ(): ReactElement {
 
         {/* What is loot ? */}
         <div className={styles.faq__item}>
-          <h3>What is Loot?</h3>
+          <h3>What is LootV3?</h3>
           <p>
             Loot is a collection of 8,000 unique bags of adventurer gear,
             originally released by{" "}
