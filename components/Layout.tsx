@@ -74,13 +74,14 @@ function Head(): ReactElement {
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
         rel="stylesheet"
       />
+      next
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-L04H1SYW6P"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-L04H1SYW6P');
+      <script dangerouslySetInnerHTML={{ __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)}
+              gtag('js', new Date());
+              gtag('config', 'G-L04H1SYW6P');
+            `,}}>
       </script>
     </HTMLHead>
   );
