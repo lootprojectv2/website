@@ -17,7 +17,7 @@ export default function Home(): ReactElement {
   const [value, setValue] = useState<number>(getRandomTokenId());
   const [image, setImage] = useState("");
   useEffect(() => {
-    async function fetchTokenURI(tokenId) {
+    async function fetchTokenURI(tokenId: any) {
       const abi = [
         {
           inputs: [
