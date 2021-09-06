@@ -40,7 +40,7 @@
   padding-top: 40px;
   text-align: center;
 
-  > span {
+  >span {
     display: block;
     color: #8e8e8e;
     font-size: 18px;
@@ -53,9 +53,17 @@
   vertical-align: top;
   margin: 15px;
   color: white;
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
+  }
+
+  img {
+
+    cursor: pointer;
   }
 }
 
@@ -65,7 +73,7 @@
   height: 400px;
   position: relative;
 
-  > span {
+  >span {
     position: absolute;
     right: 10px;
     top: 10px;
